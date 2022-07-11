@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Assigment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header id="pageheader">
+        <nav class="navh" id="navleft">
+            <img src="images/logo.png" alt="">
+            <ul id="breadcrumbs">
+                <!-- <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">a</a></li> -->
+                <li><a href="">Arufon's</a></li>
+                <li><a href="">Computer Science</a></li>
+                <li><a href="">Data Structure</a></li>
+                <li><a href="">Tree-based Data Structure</a></li>
+            </ul>
+        </nav>
+        <nav class="navh" id="navright">
+            <ul>
+                <li class="navli" ><a href="">Contributors</a></li>
+                <li class="navli" ><a href="">Share</a></li>
+                <li class="navli" ><a href="">Favourite</a></li>
+                <li><input type="text" name="" id="search" placeholder="Search"></li>
+                <li class="navli" ><a href="">About</a></li>
+                <li class="mobilenavli" ><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ccc"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="middlesection">
+        <div id="pagecover"></div>
+        <main>
+            <aside id="Sidebar">
+                <nav>
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="">🏠 Home</a></li>
+                        <li><a href="">🎓 CS50</a></li>
+                        <li><a href="">🍃 Saxion</a></li>
+                        <li><a href="">💧 Web Development</a></li>
+                        <li><a href="">💧 Algorithm</a></li>
+                        <li><a href="">🌌 Machine Learning</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <article>
+                <header id="articleheader">
+                    <img src="images/pageicon.png" alt="">
+                    <h1>Tree-based Data Structure</h1>
+                </header>
+                <section>
+                    <h2>Why Tree Data Structure?</h2>
+                    <p>The time complexity of operations in linear data structure increases as the number of elements increases. Different tree data structures allow quicker and easier access to the data as it is non-linear.</p>
+                    <h2>Terminologies</h2>
+                            <img src="images/Binary_Tree.png" alt="">
+                            <ul>
+                                <li>
+                                    <span class="brown"><b>Root</b></span> : Topmost node of the tree<br>
+                                </li>
+                                <li>
+                                    <span class="orange"><b>Parent</b></span> of a node is the node connected above it.<br>
+                                </li>
+                                <li>
+                                    <span class="yellow"><b>Children</b></span> of a node is the node connected below it.<br>
+                                </li>
+                                <li>
+                                    <span class="green"><b>Leaf</b></span> : the node that have no children node.<br>
+                                </li>
+                                <p>Nodes are <b>Sibling</b> nodes if they have the same parent.</p>
+                                <li><span class="purple"><b>Edge</b></span> : the connection between nodes.<br>
+                                </li><li>
+                                    <span class="purple"><b>Height</span> of a node</b> : is the number of edges from the node to the deepest leaf<br>
+                                </li><li>
+                                    <span class="purple"><b>Depth</span> of a node</b> : is the number of edges from the node to the root.<br>
+                                </li><li>
+                                    <b><span class="purple">Depth</span> of a tree</b> : is the number of edges from the root node to the deepest ndoe<br>
+                                </li>
+                                <li>
+                                    <b><span class="purple">Degree</span> of a node</b> : is the total number of branches of that node.
+                                </li>
+                                <p><span class="green"><b>Forest</b></span> : is a collection of disjointed trees</p>
+                            </ul>
+                    
+                    
+                    <h2>🌲 Types of Trees</h2>
+                    <div class="hsection">
+                        <div class="col">
+                           <p><b>1️⃣ Binary Tree</b></p>
+                           <p><b>2️⃣ Binary Search Tree</b></p>
+                           <p><b>3️⃣ Heap (wip)</b></p>
+                        </div>
+                        <div class="col">
+                           <p> 🔶 AVL Tree</p>
+                           <p> 🔶 B-Tree</p>
+                           <p> 🔷 Red-Black Tree</p>
+                        </div>
+                    </div>
+                    <h2>Tree Traversal</h2>
+                    <div class="hsection">
+                        <div class="col">
+                            <img src="images/treetraversal.png" alt="">
+                        </div>
+                        <div class="col">
+                            <p>These are the ways how a tree should be read. There are three ways on how to read the tree based on the order of which nodes are read first.</p>
+                        </div>
+                    </div>
+                    <div class="hsection">
+                        <div class="col">
+                            <p>👇</p>
+                            <p><b>Inorder Traversal : </b></p>
+                            <p>Visit left subtree, </p>
+                            <p>then visit root, </p>
+                            <p>then visit other subtree from left to right.</p>
+                        </div>
+                        <div class="col">
+                            <p>👈</p>
+                            <p><b>Preorder Traversal : </b></p>
+                            <p>Visit the root,</p>
+                            <p>then visit left subtree, </p>
+                            <p>then visit other subtree from left to right.</p>
+                        </div>
+                        <div class="col">
+                            <p>👉</p>
+                            <p><b>Postorder Traversal : </b></p>
+                            <p>Visit the left subtree, </p>
+                            <p>then visit other subtree from left to right, </p>
+                            <p>visit the root.</p>
+                        </div>
+                    </div>
+                    
+                    <h2>Application of Trees</h2>
+                    <ol>
+                        <li>To store information that naturally forms a hierarchy (ex.: file system).</li>
+                        <li>Make information easy to search, Self-balancing search trees like AVL and R-B trees are guaranteed to have time complexity of O(logn).</li>
+                        <li>Manipulate sorted lists of data in moderate time (quicker than array and slower than unordered linked lists.)</li>
+                        <li>Like linked list, and unlike arrays, pointer implementation of trees don’t have an upper limit on number of nodes.</li>
+                    </ol>
+                </section>
+            </article>
+            <aside id="Outline">
+                <nav>
+                    <h3>Outlines</h3>
+                    <ul>
+                        <li><a href="">Why Tree Data Structure?</a></li>
+                        <li><a href="">Terminologies</a></li>
+                        <li><a href="">Tree Traversal</a></li>
+                        <li><a href="">Types of Trees</a></li>
+                        <li><a href="">Application of Trees
+                        </a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+    </section>
+    <footer>
+        <div class="footerwrapper">
+            <p>Copyright (c) 2022 - All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
