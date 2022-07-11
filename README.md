@@ -11,7 +11,7 @@ Final Web Asessment during Exchange Programme at Saxion
 
 ## Installation
 
-Simply Open project index.html
+Simply Open index.html
 
 ## License
 
