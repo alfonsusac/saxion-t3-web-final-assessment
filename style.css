@@ -144,7 +144,7 @@ nav > ul > .mobilenavli{
     position:absolute;
     height: 28vh;
     width: 100%;
-    background-image: url("/images/bg.jpg");
+    background-image: url("images/bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
